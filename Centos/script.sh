@@ -19,6 +19,6 @@ if [ "$machine_hostname" = "master-node" ]; then
     echo "Proxy config has been copied" #The proxy conf must be set only on the master node.
 fi    
 cp /vagrant/index.html /var/www/html
-systemctl restart httpd.service #restart the httpd to take effects
+sudo systemctl restart httpd.service #restart the httpd to take effects --> https://www.centlinux.com/2019/01/configure-apache-http-load-balancer-centos-7.html#point2
 echo "Script executed, done-------------------------------------------------------"
 
